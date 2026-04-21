@@ -1,0 +1,104 @@
+.sidebar {
+  width: 280px;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(180deg, #f8f9fa 0%, #eef2f7 100%);
+  border-right: 2px solid #e5e7eb;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.statsCard,
+.activityCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.statsCard:hover,
+.activityCard:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  transform: translateY(-2px);
+}
+
+.statsCard h3,
+.activityCard h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #667eea;
+  font-weight: 700;
+}
+
+.statItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 0.75rem;
+}
+
+.statItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #667eea;
+}
+
+.activityCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activityCard li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+.activityCard li:last-child {
+  border-bottom: none;
+}
+
+.activityCard li:hover {
+  color: #667eea;
+  padding-left: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 240px;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-height: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 2px solid #e5e7eb;
+  }
+}

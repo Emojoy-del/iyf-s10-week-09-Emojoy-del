@@ -1,0 +1,65 @@
+.about {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about :global(.card) {
+  border-left-color: #667eea;
+}
+
+.about h1 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.about h2 {
+  color: #667eea;
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 700;
+}
+
+.about p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  color: #555;
+  position: relative;
+  line-height: 1.6;
+}
+
+.about li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.2rem;
+  }
+}

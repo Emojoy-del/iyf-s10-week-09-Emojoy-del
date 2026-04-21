@@ -1,0 +1,38 @@
+.postList {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.search::after {
+  content: '🔍';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.posts {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .postList {
+    max-width: 100%;
+  }
+
+  .search {
+    margin-bottom: 1rem;
+  }
+
+  .posts {
+    gap: 1rem;
+  }
+}
